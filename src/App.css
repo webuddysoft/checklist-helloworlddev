@@ -1,5 +1,12 @@
+body{
+  background-color: #282c34;
+
+}
 .App {
   text-align: center;
+  max-width: 1024px;
+  padding: 1em;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -14,12 +21,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,6 +31,40 @@
   color: #61dafb;
 }
 
+.input-box{
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.input-box label{
+  color: #fff;
+}
+input[type="text"]{
+  border: solid 1px #eee;
+  font-size: 1.2rem;
+}
+input[type="checkbox"]{
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+}
+.check-list{
+  max-width: 500px;
+  margin: 0 auto;
+  border: solid 1px #eee;
+}
+.check-item{
+  padding: 0.5rem 1rem;
+  border-bottom: solid 1px #eee;
+  text-align: left;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.check-item:last-child{
+  border-bottom: none;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
